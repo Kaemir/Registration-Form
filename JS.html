@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>
+            JavaScript Practices
+        </title>
+    </head>
+    <body>
+        <script language="JavaScript">
+            function text()
+            {
+        if(document.form.username.value=="" || document.form.password.value=="" ||
+       document.form.confirmpassword.value=="")
+        {
+            alert("Error!!");}
+        if(document.form.password.value != document.form.confirmpassword.value)
+            {
+                alert("Error Password!!");
+            }
+            else if(document.form.username.value!="" || document.form.password.value!="" ||
+       document.form.confirmpassword.value!="") {
+        alert("Successful user registration");}
+            }
+        </script>
+        <form name="form">
+            <h1>Registration Form</h1>
+            <label>Username</label><br>
+            <input type="text" size="100" name="username"><br><br>
+            <label>Password</label><br>
+            <input type="password" size="100" name="password"><br><br>
+            <label>Comfirm Password</label><br>
+            <input type="password" size="100" name="confirmpassword"><br><br>
+            <input type="button" value="Register" name="register" onclick="JavaScript:text();">
+        </form>
+    </body>
